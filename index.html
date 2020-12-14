@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencing to my styles file -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Referencing to Podcast ico -->
+    <link rel="shortcut icon" href="./images/podcast.ico">
+    <!-- Import for Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/eb98e2793d.js" crossorigin="anonymous"></script>
+    <!-- Title of my project -->
+    <title>Nana's Podcast Channel</title>
+</head>
+<body>
+    <!-- Contenedor Principal -->
+    <div class="flex container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-nav">
+                <img src="./images/logo.svg" alt="bd logo" width="36" height="36">
+            </div>
+            <!-- Menu Escritorio -->
+            <nav class="sub-titles flex desktop-menu">
+                <ul>
+                    <li><a class="menu-link" href="#episodios">Episodios</a></li>
+                    <li><a class="menu-link" href="#nosotros">Nosotros</a></li>
+                    <li><a class="menu-link" href="#entrevistas">Entrevistas</a></li>
+                    <li><a class="menu-link" href="#topicos">Tópicos</a></li>
+                </ul>
+            </nav>
+            <!-- Menu Mobile -->
+            <div class="sub-titles mobile-menu">
+                <input id="nav-toggle" type="checkbox" class="custom-checkbox" />
+                <label for="nav-toggle" class="label-burger">
+                    <div class="container-burger">
+                        <div class="line line-top"></div>
+                        <div class="line line-med"></div>
+                        <div class="line line-low"></div>
+                    </div>
+                </label>
+                <nav class="menu-list-mobile">
+                    <ul>
+                        <li><a class="menu-link" href="#episodios">Episodios</a></li>
+                        <li><a class="menu-link" href="#nosotros">Nosotros</a></li>
+                        <li><a class="menu-link" href="#entrevistas">Entrevistas</a></li>
+                        <li><a class="menu-link" href="#topicos">Tópicos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Fin -->
+        <!-- Enunciado -->
+        <section class="flex section-ppal">
+            <div class="landing-title">
+                Hello <span class="landing-title-word">world</span> pale blue dot<span class="landing-title-dot">.</span>             
+            </div>
+            <div class="landing-description sub-titles">
+                El portal de podcasts que explora el mundo de la programación 
+                y la tecnología. Nuevos episodios, todos los jueves cada 15 días.
+            </div>
+            <div class="landing-button">
+                <button onclick="location.href='#nosotros'" class="btn btn-md">CONOCE MÁS</button>
+            </div>     
+        </section>
+        <!-- Fin -->
+        <!-- Episodios -->
+        <section id="episodios" class="podcast">
+            <div class="background"></div>
+            <div class="titles podcast-title">
+                Episodios
+            </div>
+            <div class="element-center container-iframe">
+                <div class="iframe">
+                    <iframe 
+                        src="https://open.spotify.com/embed-podcast/episode/6SLQaXHIgNWhRa2xAMIRmo" 
+                        width="100%"
+                        height="100%"
+                        frameborder="0" 
+                        allowtransparency="true" 
+                        allow="encrypted-media">
+                    </iframe>
+                </div>
+                <div class="iframe">
+                    <iframe 
+                        src="https://open.spotify.com/embed-podcast/episode/1fut5SbgpPN10TJVWog1Di" 
+                        width="100%"
+                        height="100%"
+                        frameborder="0" 
+                        allowtransparency="true" 
+                        allow="encrypted-media">
+                    </iframe>
+                </div>          
+                <div class="iframe">
+                    <iframe 
+                        src="https://open.spotify.com/embed-podcast/episode/3VxPo8mZOtcbpO14cYdsOz" 
+                        width="100%"
+                        height="100%" 
+                        frameborder="0" 
+                        allowtransparency="true" 
+                        allow="encrypted-media">
+                    </iframe>
+                </div>
+                <div class="iframe">
+                    <iframe 
+                        src="https://open.spotify.com/embed-podcast/episode/4ORGp3Bk7Fz4Ddru0vG6v2" 
+                        width="100%"
+                        height="100%" 
+                        frameborder="0" 
+                        allowtransparency="true" 
+                        allow="encrypted-media">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        <!-- Fin -->
+        <!-- Nosotros -->
+        <section id="nosotros" class="flex">
+            <div class="element-center history-image">
+              <img src="./images/phone.png" alt="The Secret History of Women in Coding">
+            </div>
+            <div class="element-center history-content">
+                <div class="titles history-title">De dónde venimos</div>
+                <div class="sub-titles history-text">  
+                    Our posturings, our imagined self-importance, the delusion that we have some privileged 
+                    position in the Universe, are challenged by this point of pale light.
+                    <br>
+                    <br>
+                    Our planet is a lonely speck in the great enveloping cosmic dark. 
+                    In our obscurity, in all this vastness, there is no hint that help 
+                    will come from elsewhere to save us from ourselves.
+                </div>
+            </div>
+        </section>
+        <!-- Fin -->
+        <!-- Galeria Invitadas -->
+        <section id="entrevistas" class="gallery">
+            <div class="flex gallery-header">
+                <h1 class="titles">Invitadas estelares</h1>
+            </div>
+            <div class="gallery-images">
+                <div class="flex">
+                    <img src="./images/gallery/Grace-Hopper.png" alt="Grace Hopper">
+                    <img src="./images/gallery/Katie-Bouman.png" alt="Katie Bouman">
+                    <img src="./images/gallery/Margaret-Hamilton.png" alt="Margaret Hamilton">
+                </div>
+                <div class="flex">
+                    <img src="./images/gallery/ERA-computer.png" alt="An E.R.A. Univac 1103 computer in the 1950s">
+                    <img src="./images/gallery/Eniac-computer.png" alt="Computer operatos with an Eniac - the world’s first programmable general purpose computer">
+                    <img src="./images/gallery/Susan-Kare.png" alt="Susan Kare">
+                </div>
+            </div>
+        </section>
+        <!-- Fin -->
+        <!-- Topicos -->
+        <section id="topicos" class="element-center themes">
+            <div class="titles theme-title">Algunos de nuestros temas</div>
+            <div class="flex themes-icons">
+                <div>
+                    <img src="./images/icon1.svg" alt="Trabajo remoto">
+                    <p class="element-center">Trabajo remoto</p>
+                </div>
+                <div>
+                    <img src="./images/icon2.svg" alt="Repensando la programación">
+                    <p class="element-center">Repensando la programación</p>
+                </div>
+                <div>
+                    <img src="/images/icon3.svg" alt="Bases del código">
+                    <p class="element-center">Bases del código</p>
+                </div>
+                <div>
+                    <img src="/images/icon4.svg" alt="Seguridad informática">
+                    <p class="element-center">Seguridad informática</p>
+                </div>
+            </div>
+        </section>
+        <!-- Fin -->
+        <!-- Contacto -->
+        <section class="element-center contact">
+            <div class="background-2"></div>
+            <div class="titles">¿Querés las últimas novedades?</div>
+            <button onclick="location.href='#episodios'" class="btn btn-lg">ESCUCHÁ LOS EPISODIOS</button>
+        </section>
+        <!-- Fin -->
+        <!-- Footer -->
+        <footer class="flex footer">
+            <div class="element-center sub-titles footer-copyright">© 2020 - Hello blue pale dot</div>
+            <div class="flex footer-icon-section">
+                <a href="https://www.spotify.com/co/" target="_blank" title="Spotify">
+                    <i class="fab fa-spotify"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/?lang=es" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://es-la.facebook.com/" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://web.telegram.org/" target="_blank" title="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </footer>
+        <!-- Fin -->
+    </div>
+    <!-- Fin -->
+</body>
+</html>
