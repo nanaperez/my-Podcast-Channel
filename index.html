@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <!-- Referencing to Podcast ico -->
     <link rel="shortcut icon" href="./images/podcast.ico">
-    <!-- Import for Font Awesome Kit -->
+    <!-- Import of IBM Plex Sans and IBM Plex Mono fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap"> 
+    <!-- Import of Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/eb98e2793d.js" crossorigin="anonymous"></script>
     <!-- Title of my project -->
     <title>Nana's Podcast Channel</title>
@@ -33,11 +35,11 @@
             <div class="sub-titles mobile-menu">
                 <input id="nav-toggle" type="checkbox" class="custom-checkbox" />
                 <label for="nav-toggle" class="label-burger">
-                    <div class="container-burger">
-                        <div class="line line-top"></div>
-                        <div class="line line-med"></div>
-                        <div class="line line-low"></div>
-                    </div>
+                    <span class="container-burger">
+                        <span class="line line-top"></span>
+                        <span class="line line-med"></span>
+                        <span class="line line-low"></span>
+                    </span>
                 </label>
                 <nav class="menu-list-mobile">
                     <ul>
@@ -52,9 +54,9 @@
         <!-- Fin -->
         <!-- Enunciado -->
         <section class="flex section-ppal">
-            <div class="landing-title">
+            <h1 class="landing-title">
                 Hello <span class="landing-title-word">world</span> pale blue dot<span class="landing-title-dot">.</span>             
-            </div>
+            </h1>
             <div class="landing-description sub-titles">
                 El portal de podcasts que explora el mundo de la programación 
                 y la tecnología. Nuevos episodios, todos los jueves cada 15 días.
@@ -67,17 +69,15 @@
         <!-- Episodios -->
         <section id="episodios" class="podcast">
             <div class="background"></div>
-            <div class="titles podcast-title">
+            <h1 class="titles podcast-title">
                 Episodios
-            </div>
+            </h1>
             <div class="element-center container-iframe">
                 <div class="iframe">
                     <iframe 
                         src="https://open.spotify.com/embed-podcast/episode/6SLQaXHIgNWhRa2xAMIRmo" 
                         width="100%"
                         height="100%"
-                        frameborder="0" 
-                        allowtransparency="true" 
                         allow="encrypted-media">
                     </iframe>
                 </div>
@@ -86,8 +86,6 @@
                         src="https://open.spotify.com/embed-podcast/episode/1fut5SbgpPN10TJVWog1Di" 
                         width="100%"
                         height="100%"
-                        frameborder="0" 
-                        allowtransparency="true" 
                         allow="encrypted-media">
                     </iframe>
                 </div>          
@@ -95,9 +93,7 @@
                     <iframe 
                         src="https://open.spotify.com/embed-podcast/episode/3VxPo8mZOtcbpO14cYdsOz" 
                         width="100%"
-                        height="100%" 
-                        frameborder="0" 
-                        allowtransparency="true" 
+                        height="100%"
                         allow="encrypted-media">
                     </iframe>
                 </div>
@@ -105,9 +101,7 @@
                     <iframe 
                         src="https://open.spotify.com/embed-podcast/episode/4ORGp3Bk7Fz4Ddru0vG6v2" 
                         width="100%"
-                        height="100%" 
-                        frameborder="0" 
-                        allowtransparency="true" 
+                        height="100%"
                         allow="encrypted-media">
                     </iframe>
                 </div>
@@ -120,7 +114,7 @@
               <img src="./images/phone.png" alt="The Secret History of Women in Coding">
             </div>
             <div class="element-center history-content">
-                <div class="titles history-title">De dónde venimos</div>
+                <h1 class="titles history-title">De dónde venimos</h1>
                 <div class="sub-titles history-text">  
                     Our posturings, our imagined self-importance, the delusion that we have some privileged 
                     position in the Universe, are challenged by this point of pale light.
@@ -135,9 +129,7 @@
         <!-- Fin -->
         <!-- Galeria Invitadas -->
         <section id="entrevistas" class="gallery">
-            <div class="flex gallery-header">
-                <h1 class="titles">Invitadas estelares</h1>
-            </div>
+            <h1 class="flex titles gallery-header">Invitadas estelares</h1>
             <div class="gallery-images">
                 <div class="flex">
                     <img src="./images/gallery/Grace-Hopper.png" alt="Grace Hopper">
@@ -154,7 +146,7 @@
         <!-- Fin -->
         <!-- Topicos -->
         <section id="topicos" class="element-center themes">
-            <div class="titles theme-title">Algunos de nuestros temas</div>
+            <h1 class="titles theme-title">Algunos de nuestros temas</h1>
             <div class="flex themes-icons">
                 <div>
                     <img src="./images/icon1.svg" alt="Trabajo remoto">
@@ -178,7 +170,7 @@
         <!-- Contacto -->
         <section class="element-center contact">
             <div class="background-2"></div>
-            <div class="titles">¿Querés las últimas novedades?</div>
+            <h1 class="titles">¿Querés las últimas novedades?</h1>
             <button onclick="location.href='#episodios'" class="btn btn-lg">ESCUCHÁ LOS EPISODIOS</button>
         </section>
         <!-- Fin -->

@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
-
 /* CONTENEDOR PRINCIPAL */
 .container {
     flex-direction: column;
 }
+/* FIN */
 /* ESTILOS GENERALES */
 .flex {
     display: flex;
@@ -39,13 +37,13 @@
     font-family: 'IBM Plex Mono', monospace;
     font-size: 18px;
     font-weight: 600;
-    background: rgba(0,243,187,1);
+    background: rgb(0,243,187);
     border: none;
     cursor: pointer;
 }
 
 .menu-link {
-    color: rgba(6,10,36,1);
+    color: rgb(6,10,36);
     text-transform: uppercase;
     text-decoration: none;
     font-size: 16px;
@@ -72,8 +70,9 @@
 }
 /* MOBILE MENU */
 .container-burger {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2.3rem;
+    width: 2.3rem;
+    display: block;
     cursor: pointer;
     position: relative;
 }
@@ -131,7 +130,7 @@
 }
 
 .menu-list-mobile ul {
-    background-color: rgba(0,0,236,1);
+    background-color: rgb(0,0,236);
     padding: 3% 5%;
     list-style: none;
     width: 100%;
@@ -154,9 +153,10 @@
 }
 
 .landing-title {
-    font-size: 64px;   
+    font-size: 64px;
     font-family: 'IBM Plex Sans', sans-serif;
     margin-bottom: 1%;
+    font-weight: 300;
 }
 
 .landing-title-word {
@@ -184,7 +184,7 @@
 .background {
     width: 99.9%;
     height: 800px;
-    background: linear-gradient(to left, rgba(0,0,255,1), rgba(0,0,163,1));
+    background: linear-gradient(to left, rgb(0,0,255), rgb(0,0,163));
     clip-path: polygon(0 18%, 100% 0, 100% 82%, 0 100%);
     z-index: -1;
     position: absolute;
@@ -192,7 +192,7 @@
 
 .podcast-title {
     color: white;
-    padding: 12% 0% 2% 10%;
+    padding: 12% 0 2% 10%;
 }
 
 .container-iframe {
@@ -200,12 +200,17 @@
 }
 
 .iframe {
-    height: 155px;
+    height: 156px;
     width: 480px;
     margin: 1.5% 2%;
     border-radius: 15px;
     overflow: hidden;
     transition: all 1s ease;
+}
+
+iframe {
+    border: 0;
+    background-color: transparent;
 }
 /* FIN */
 /* NOSOTROS */
@@ -245,13 +250,12 @@
 
 .gallery-images .flex img {
     width: 33.3%;
-    border: 1px solid black;
     flex: 1;
 }
 /* FIN */
 /* TOPICOS */
 .themes {
-    margin: 5% 0%;
+    margin: 5% 0;
     flex-direction: column;
 }
 
@@ -279,7 +283,7 @@
 .background-2 {
     width: 99.9%;
     height: 450px;
-    background: linear-gradient(to left, rgba(0,0,255,1), rgba(0,0,163,1));
+    background: linear-gradient(to left, rgb(0,0,255), rgba(0,0,163));
     clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
     z-index: -1;
     position: absolute;
@@ -306,7 +310,7 @@
 
 .footer-icon-section {
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 35%;
 }
 
@@ -317,7 +321,7 @@
 /* FIN */
 /* ESTADOS HOVER Y ACTIVE */
 .menu-link:hover {
-    color: rgba(0,243,187,1);
+    color: rgb(0,243,187);
     text-decoration: line-through;
 }
 
@@ -327,12 +331,12 @@
 }
 
 .btn:hover {
-    background: linear-gradient(to left,rgba(0,0,254,1),rgba(0,240,184,1));
-    color: white;
+    background: linear-gradient(to left,rgb(0,0,254),rgb(0,240,184));
+    color: rgb(255, 255, 255);
 }
 
 .footer-icon-section a:hover {
-    color: rgba(0,243,187,1);
+    color: rgb(0,243,187);
 }
 /* FIN */
 /* MEDIA QUERIES */
@@ -388,7 +392,7 @@
         flex-direction: column;
     }
     .history-content {
-        padding: 0% 5%;
+        padding: 0 5%;
     }
     .history-image img {
         width: 100%;
@@ -424,7 +428,7 @@
         margin-bottom: 10%;
     }
     .contact {
-        padding: 0% 5%;
+        padding: 0 5%;
         height: 320px;
     }
     .background-2 {
